@@ -15,21 +15,35 @@
         android:text="Game: Press the Button." />
 
     <Button
-        android:id="@+id/buttonA"
+        android:id="@+id/button_plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:text="+"
         android:layout_centerVertical="true"
-        android:text="Press Me!" />
+        android:layout_alignRight="@+id/text1"
+        android:layout_alignEnd="@+id/text1"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
+        android:text="Вы ввели: "
         android:id="@+id/text2"
         android:layout_below="@+id/textQ"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="46dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/button_minus"
+        android:layout_alignTop="@+id/button_plus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="52dp"
+        android:layout_marginEnd="52dp" />
 
 </RelativeLayout>

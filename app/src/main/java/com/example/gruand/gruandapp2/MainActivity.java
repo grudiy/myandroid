@@ -20,18 +20,28 @@ public class MainActivity extends AppCompatActivity {
 
         final TextView tv = (TextView) findViewById(R.id.text2);
 
-        int charsNumber = tv.getText().length();
-        tv.append(" chars:" + charsNumber);
+        //int charsNumber = tv.getText().length();
+        //tv.append(" chars:" + charsNumber);
 
 
-        Button b1 = (Button) findViewById(R.id.buttonA);
-
-        b1.setOnClickListener(new View.OnClickListener() {
+        Button bplus = (Button) findViewById(R.id.button_plus);
+        bplus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tv.append(" -->");
+                tv.append(" + ");
             }
         });
+
+        Button bminus = (Button) findViewById(R.id.button_minus);
+        bminus.setOnClickListener(new View.OnClickListener() {
+                                      @Override
+                                      public void onClick(View v) {
+                                          tv.append(" - ");
+                                      }
+                                  }
+
+        );
+
     }
 
     @Override
@@ -39,8 +49,6 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
-
-
     }
 
     @Override
