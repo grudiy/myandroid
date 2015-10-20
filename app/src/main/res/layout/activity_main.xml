@@ -6,7 +6,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#ede5aa">
 
     <TextView
         android:id="@+id/text1"
@@ -18,12 +19,13 @@
         android:id="@+id/button_plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="+"
+        android:text=" @ "
         android:layout_centerVertical="true"
         android:layout_alignRight="@+id/text1"
         android:layout_alignEnd="@+id/text1"
         android:layout_marginRight="27dp"
-        android:layout_marginEnd="27dp" />
+        android:layout_marginEnd="27dp"
+        android:background="#2a9641" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,12 +40,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="-"
+        android:text=" - "
         android:id="@+id/button_minus"
         android:layout_alignTop="@+id/button_plus"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="52dp"
-        android:layout_marginEnd="52dp" />
+        android:layout_marginEnd="52dp"
+        android:background="#ee9797" />
 
 </RelativeLayout>

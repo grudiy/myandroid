@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         bplus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tv.append(" + ");
+                tv.append(" @ ");
             }
         });
 
